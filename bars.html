@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafes</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .head{
+            border: 1px solid black;
+            height: 540px;
+            width: 100%;
+        }
+        .head-block{
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 70px;
+            background-color: #383838;
+        }
+        .img{
+            padding-bottom: 10px;
+            border-radius: 100%;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        li{
+            padding: 10px 15px;
+            color: black;
+            transition: 0.3s all ease-in-out;
+        }
+        a{
+            font-size: large;
+            font-weight: 800;
+            font-size: 20px ;
+            color: white;
+        }
+        li:hover{
+            background-color: white;
+        }
+        a:hover{
+            color: black;
+            text-decoration: overline;
+        }
+        .head-block1{
+            border: 1px solid red;
+            display: flex;
+            height: 87%;
+        }
+        .block1-subblock{
+            margin-top: 5px;
+            display: flex;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 1px solid black;
+        }
+        .childlock1{
+            border: 1px solid green;
+            background-image: url("./photos/bestcafe.jpg");
+        }
+        .ab{
+            color: #ff7e00;
+        }
+        .child{
+            margin: 0px;
+            padding: 0px;
+        }
+        .ab:hover{
+            color: green;
+        }
+        .page1{
+            display: flex;
+            justify-content: center;
+        }
+        .page1-button{
+            height: 50px;
+            width: 50px;
+        }
+        .page1-ancer{
+            text-decoration: none;
+            color: #ff7e00;
+            font-size: 30px;
+            font-weight: 550;
+            text-decoration: none;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <body class="head">
+        <div class="head-block">
+            <img src="./photos/download (1).jfif" class="img" height="70px" width="70px">
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./offers.css">Offers</a></li>
+                <li><a href="./orders.html">Orders</a></li>
+                <li><a href="./cart.html">Cart</a></li>
+            </ul>
+        </div>
+        <div class="head-block1">
+            <div class="block1-subblock">
+                <img src="./photos/buzzing.jpg" alt="" class="img2" width="100%" height="50%">
+                <div class="child">
+                    <h4>Place : Dilsukhnagar</h4><br>
+                    <h4>Timings : 3:00pm to 11:00pm</h4><br>
+                    <h4>Address : <a href="#" class="ab"> Chetanyapuri metro station </a></h4><br>
+                    <h4><a href="./delivery.html" class="ab"> Book a Table </a></h4>
+                </div>
+            </div>
+            <div class="block1-subblock">
+                <img src="./photos/bar.jpeg" alt="" class="img2" width="100%" height="50%">
+                <div class="child">
+                    <h4>Place : Gachibole</h4><br>
+                    <h4>Timings :  3:00pm to 11:00pm</h4><br>
+                    <h4></h4>Address : <a href="#" class="ab"> opposite to BusStop</a><h4><br>
+                    <h4><a href="./delivery.html" class="ab"> Book a Table</a></h4>
+                </div>
+            </div>
+            <div class="block1-subblock">
+                <img src="./photos/bars.jpeg" alt="" class="img2" width="100%" height="50%">
+                <div class="child">
+                    <h4>Place : jublihills</h4><br>
+                    <h4>Timings :  3:00pm to 11:00pm</h4><br>
+                    <h4></h4>Address : <a href="#" class="ab"> side of Union Bank </a><h4><br>
+                    <h4><a href="./delivery.html" class="ab"> Book a section </a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="page1">
+            <button class="page1-button"><a href="./Home.html" class="page1-ancer">1</a></button>
+            <button class="page1-button"><a href="./orders.html" class="page1-ancer">2</a></button>
+            <button class="page1-button"><a href="./offers.html" class="page1-ancer">3</a></button>
+        </div>
+    </body>
+</body>
+</html>

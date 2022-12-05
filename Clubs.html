@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafes</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            padding: 10px 90px;
+            box-sizing: border-box;
+            background: rgba(0,0,0,0.6);
+            border-bottom: 1px solid #fff;
+        }
+        .img{
+            border-radius: 100%;
+        }
+        nav .logo{
+            height: 80px;
+            float: left;
+        }
+        nav ul{
+            list-style: none;
+            float: right;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li a{
+            line-height: 80px;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        nav ul li a:hover{
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 6px;
+        }
+        .head-block1{
+            border: 1px solid red;
+            display: flex;
+            height: 460px;
+            width: 100%;
+        }
+        .block1-subblock{
+            margin-top: 5px;
+            display: flex;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 1px solid black;
+        }
+        .childlock1{
+            border: 1px solid green;
+            background-image: url("./photos/bestcafe.jpg");
+        }
+        .ab{
+            color: #ff7e00;
+        }
+        .child{
+            margin: 0px;
+            padding: 0px;
+        }
+        .ab:hover{
+            color: green;
+            text-decoration: overline;
+        }
+        .page1{
+            display: flex;
+            justify-content: center;
+        }
+        .page1-button{
+            height: 50px;
+            width: 50px;
+        }
+        .page1-ancer{
+            text-decoration: none;
+            color: #ff7e00;
+            font-size: 30px;
+            font-weight: 550;
+            text-decoration: none;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <nav>
+            <div class="logo"><img src="./photos/download (1).jfif" class="img" height="70px" width="70px"></div>
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./offers.html">Offers</a></li>
+                <li><a href="./orders.html">Orders</a></li>
+            </ul>
+        </nav>
+        <div class="head-block1">
+            <div class="block1-subblock">
+                <img src="./photos/pub1.jpeg" alt="" class="img2" width="100%" height="50%">
+                <div class="child">
+                    <h4>Place : Dilsukhnagar</h4><br>
+                    <h4>Timings : 06:00pm to 12:20pm</h4><br>
+                    <h4></h4>Address : <a href="#" class="ab"> opposite klm shopping mall </a><h4><br>
+                </div>
+            </div>
+            <div class="block1-subblock">
+                <img src="./photos/pub2.jpeg" alt="" class="img2" width="100%" height="50%">
+                <div class="child">
+                    <h4>Place : Gachibole</h4><br>
+                    <h4>Timings : 06:00pm to 12:20pm</h4><br>
+                    <h4></h4>Address : <a href="#" class="ab"> opposite to car showroom</a><h4><br>
+                </div>
+            </div>
+            <div class="block1-subblock">
+                <img src="./photos/pub3.jpeg" alt="" class="img2" width="100%" height="50%">
+                <div class="child">
+                    <h4>Place : jublihills</h4><br>
+                    <h4>Timings : 06:00pm to 12:20pm</h4><br>
+                    <h4></h4>Address : <a href="#" class="ab"> side of HDFC Bank </a><h4><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page1">
+        <button class="page1-button"><a href="./Home.html" class="page1-ancer">1</a></button>
+        <button class="page1-button"><a href="./orders.html" class="page1-ancer">2</a></button>
+        <button class="page1-button"><a href="./offers.html" class="page1-ancer">3</a></button>
+    </div>
+</body>
+</html>

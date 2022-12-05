@@ -1,0 +1,115 @@
+header{
+        width: 95%;
+        height: 75px;
+        margin: 0px auto;
+        }
+    .header-ul{
+        padding: 0px;
+        }
+    .header-li{
+        float: left;
+        background-color: rgb(3, 3, 3);
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        list-style: none;
+        font-size: 25px;
+        font-style: italic;
+        text-align: center;
+        opacity: 0.6;
+        }
+    .header-a{
+        color: white;
+        text-decoration: none;
+        }
+    .header-li:hover{
+        background-color: #26de26;
+        opacity: 0.9;
+        }
+    input{
+        height: 3rem;
+        width: 200px;
+        background-color: black;
+        opacity: 0.6;
+        color: white;
+    }
+    input:hover{
+        border: 5px solid black;
+    }
+    #slider{
+        overflow: hidden;
+        padding: 20px;
+        }
+    #slider figure{
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation:slider 10s infinite;
+        }
+    #slider figure img{
+        width: 20%;
+        float: left;
+    }
+    @keyframes slider{
+        0%{
+            left: -100%;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left: -230%;
+        }
+        50%{
+            left: -290%;
+        }
+        70%{
+            left:-230px
+        }
+            100%{
+            left:-100px;
+        }
+            }
+
+            .section-container{
+                border-bottom: 1px solid black;
+                display:grid;
+                height: 1100px;
+                grid-template: repeat(3,200px)/repeat(3,200px);
+                place-content: space-around;
+            }
+            .section-a{
+                font-size: 20px;
+                text-decoration: none;
+                color: red;
+                transition: all 0.3s;
+            }
+            .section-a:hover{
+                color: #26de26;
+            }
+            .button{
+                height: 2.4rem;
+                width: 10rem;
+                background-color: #26de26;
+                border-radius: 3px;
+                color: white;
+                transition: all 0.3s;
+            }
+            .button:hover{
+                color: #26de26;
+                background-color: transparent;
+                border-radius: 8px;
+                box-shadow: 0 0 10px #ff7a00,0 0 10px #ff7a00,0 0 10px #ff7a00;
+                cursor:grab;
+         } 
+         
+         .page1{
+            text-align: center;
+         }
+         .page1-button{
+            font-size: 25px;
+         }
+         .page1-ancer{
+            text-decoration: none;
+         }

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>foodie</title>
+       <link rel="icon" href="./photos/download (1).jfif">
+       <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            border: 1px solid transparent;
+        }
+        header{
+            border: 1px solid transparent;
+            height: 480px;
+            background-image: url("photos/iteam10.jpg") ;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        a{
+            text-decoration: none;
+            float: left;
+            color: white;
+            opacity: 0.9;
+            text-align: center;
+            transition: all 0.s;
+        }
+        a:hover{
+            color: #ff7a00;
+        }
+        li{
+            float: left;
+            list-style: none;
+            /*display: block;*/
+            width: 200px;
+            height: 50px;
+            /*line-height: 50px;
+            list-style: none;*/
+            font-size: 25px;
+            font-style: italic;
+            text-align: center;
+            opacity: 0.8;
+        }
+        .input{
+            background-color: transparent;
+            color: white;
+            height: 50px;
+            width: 300px;
+            border: 1px solid white;
+            text-align: center;
+            border-radius: 3px;
+        }
+        .input:hover{
+            border-left: white;
+        }
+        p{
+            color: white;
+            text-align: center;
+            font-size: 55px;
+            font-style: italic;
+        }
+        h1{
+            color: white;
+            text-align:center;
+            margin: 0px;
+        }
+        .block{
+            height: 260px;
+            display: flex;
+            flex-grow: 1;
+        }
+        .sub-block1{
+            border: 1px solid transparent;
+            display: flex;
+            flex-grow: 1;
+            border-radius: 2px;
+            background-image: url("photos/iteam1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transform: scale(0.9);
+        }
+        .sub-block2{
+            border: 1px solid transparent;
+            display: flex;
+            flex-grow: 1;
+            border-radius: 2px;
+            background-image: url("photos/iteam2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transform: scale(0.9);
+        }
+        .sub-block3{
+            border: 1px solid transparent;
+            display: flex;
+            flex-grow: 1;
+            border-radius: 2px;
+            background-image: url("photos/pub.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transform: scale(0.9);
+        }
+        .ancer{
+            font-size: 27px;
+        }
+        .ancer:hover{
+            color: white;
+            background-color: teal;
+            opacity: 0.7;
+        }
+        h3{
+            margin: 3px;
+            padding: 5px;
+            font-size: 50px;
+            font-style:normal;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .footer-block{
+            border: 1px solid transparent;
+            display: flex;
+            height: 280px;
+            flex-grow: 1;
+            
+        }
+        .footer-subblock1{
+            border: 1px solid transparent;
+            display: flex;
+            flex-grow: 1;
+            border-radius: 2px;
+            background-image: url("photos/open.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transform: scale(0.9);
+        }
+        .footer-subblock2{
+            border: 1px solid transparent;
+            display: flex;
+            flex-grow: 1;
+            border-radius: 2px;
+            background-image: url("photos/cafes.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transform: scale(0.9);
+        }
+        .footer-subblock3{
+            border: 1px solid transparent;
+            display: flex;
+            flex-grow: 1;
+            border-radius: 2px;
+            background-image: url("photos/legends.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transform: scale(0.9);
+        }
+        
+        .footer-subblock4{
+            border: 1px solid transparent;
+            display: flex;
+            flex-grow: 1;
+            border-radius: 2px;
+            background-image: url("photos/buzzing.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transform: scale(0.9);
+        }
+        section{
+            border: 1px solid transparent;
+        }
+        .container{
+            padding: 15px;
+            border: 1px solid transparent;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+        .grid-item{
+            font-size: 1.5rem;
+            padding: 1rem;text-align: center;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            background-color: rgb(88, 79, 79);
+        }
+        .ancer1{
+            margin: 20px;
+            padding: 10px;
+            text-transform: capitalize;
+            background-color: #ff7a00;
+            border: 2px solid #ff7a00;
+            border-radius: 15px;
+            color: #fff;
+            font-family: inherit;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s;
+        }
+        .ancer1:hover{
+            color: green;
+            background-color: white;
+            border-radius: 8px;
+            border-color: #ff7a00;
+            border: 8px;
+        }
+        
+        form{
+            border: 1px solid black;
+            display: flex;
+            flex-grow: 1;
+        }
+        .form{
+            border: 1px solid black;
+            display: flex;
+            flex-grow: 1;
+        }
+        aside{
+            border: 1px solid black;
+            display: flex;
+            flex-grow: 1;
+        }
+        .side{
+            border: 1px solid black;
+            color: black;
+            justify-content: center;
+        }
+        .another{
+            border: 1px solid black;
+            display: flex;
+            flex-grow: 1;
+        }
+        figure{
+            padding: 0px;
+            margin: 0px;
+            border: 1px solid black;
+            display: flex;
+            flex-grow: 1;
+        }
+        form{
+            border: 1px solid black;
+            display: flex;
+            flex-grow: 1;
+            text-align: center;
+        }
+        h4{
+            padding: 30px;
+            margin: 4px;
+            text-align: center;
+            font-size: 35px ;
+        }
+        .bb{
+            padding: 18px;
+            font-size: 20px;
+        }
+        .input1{
+            font-size: 19px;
+        }
+        .radio{
+            text-align: center;
+            padding: 10px;
+        }
+        .input2{
+            height: 38px;
+            width: 350px;
+            border-radius: 6px;
+            align-items: center;
+            transition: all 0.3s;
+        }
+        .button {
+            height: 40px;
+            width: 220px;
+            margin: 40px auto 0;
+            padding: 16px 64px;
+            text-transform: capitalize;
+            background-color: #ff7a00;
+            border: 2px solid #ff7a00;
+            border-radius: 15px;
+            color: #fff;
+            font-family: inherit;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s;
+        }
+        .button:hover{
+            background-color: transparent;
+            color: #ff7a00;
+            border: 5px solid #ff7a00;
+        }
+        button:hover{
+            border: 5px solid black;
+            border-radius: 6px;
+        }
+        .aa{
+            border: 1px solid transparent;
+            display: flex;
+            flex-grow: 1;
+        }
+        .figure{
+            margin: 0px;
+            padding-left: 150px;
+            border: 1px solid transparent;
+            flex-grow: 1;
+        }
+        .for{
+            border: 1px solid transparent;
+            flex-grow: 1;
+        }
+        h2{
+            font-size: 40px;
+            font-family: Verdana;
+            font-weight: bold;
+        }
+        .checkbox{
+            border: 1px solid black;
+        }
+        .body{
+            float: right;
+            transition: all 0.3s;
+        }
+        .h2{
+            font-size: 22px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .maindiv{
+            border:1px solid black;
+            height: 300px;
+            padding: 15px;
+            display: flex;
+            flex-grow: 1;
+        }
+        .subdiv1{
+            flex-grow: 1;
+        }
+        .subdiv2{
+            flex-grow: 1;
+        }
+        .subdiv3{
+            flex-grow: 1;
+        }
+        .subdiv4{
+            flex-grow: 1;
+        }
+        .subdiv5{
+            flex-grow: 1;
+        }
+        nav{
+            padding-bottom: 9px;
+            font-size: 16px;
+            font-weight: bolder;
+        }
+        .href{         
+           color: black;
+           font-size:15px
+        }
+        .page{
+            text-align: center;
+        }
+        .page-button{
+            font-size: 25px;
+        }
+        .page-ancer{
+            text-decoration: none;
+            color: black;
+        }
+       </style>
+    </head>
+    <body>
+        <div>
+
+
+
+        <header>
+            <ul class="ul">
+                <li ><a href="./index.html" > Home</a></li>
+                <li ><a href="./orders.html" > Oreders</a></li>
+                <li ><a href="./loguin.html" > Login</a></li>
+                <li ><a href="./signin.html" > Sign-up</a></li>
+            </ul>
+            <input type="search" placeholder="search here" class="input" ><br>
+            <p >foodie</p>
+            <h1>Discover the best food & drinks in Hyderabad</h1>
+        </header>
+
+
+
+        <div class="block">
+            <div class="sub-block1"><a href="./orders.html" class="ancer">
+                order online<br>
+                stey and order to door step</a></div>
+            <div class="sub-block2"><a href="./orders.html" class="ancer">Dinning order</a></div>
+            <div class="sub-block3"><a href="./Clubs.html" class="ancer">Clubs</a></div>
+        </div>
+
+
+
+        <footer>
+            <h3>Collections</h3>
+            <div class="footer-block">
+                <div class="footer-subblock2"><a href="./cafes.html" class="ancer">Pictureque cafes</a></div>
+                <div class="footer-subblock3"><a href="./citylegends.html" class="ancer">Hotel rooms</a></div>
+                <div class="footer-subblock4"><a href="./bars.html" class="ancer">Buzzing bars</a></div>
+            </div>
+        </footer>
+        
+
+
+        <section>
+            <h3>Popular localities in and around Hyderabad</h3>
+            <div class="container">
+                <div class="grid-item item1"><a href="./page5.html" class="ancer1">Dilsukhnagar</a> </div>
+                <div class="grid-item item2"><a href="./page2.html" class="ancer1">Hitech City</a></div>
+                <div class="grid-item item3"><a href="./page3.html" class="ancer1">L.B.Nagar</a></div>
+                <div class="grid-item item4"><a href="./page4.html" class="ancer1">jublihills</a></div>
+                <div class="grid-item item5"><a href="./page1.html" class="ancer1">Gachibole</a></div>
+                <div class="grid-item item6"><a href="./page6.html" class="ancer1">Hayathnagar</a></div>
+            </div>
+        </section>
+
+
+
+        <div class="aa">
+            <div class="figure">
+                <img src="photos/phone.jpg" alt="">
+            </div>
+            <div class="for">
+        <h4> Get  App Link</h4>
+        <h4 class="bb">We will send you a link, open it on your phone to download the app</h4>
+        <div class="radio">
+            <input type="radio" name="Email" class="input1">
+            <label for="EmAIL" class="input1">Email</label>
+            <input type="radio" name="Email" class="input1">
+            <label for="phone" class="input1">phone</label><br><br><br>
+            <input type="email" placeholder="Email" class="input2">
+            <button class="button">Get Link</button><br>
+            <button ><img src="photos/googlepay.jpg" height="100px" width="90px"></button>
+            <button ><img src="photos/app.jpg" height="100px" width="100px"></button>
+        </div>
+    </div>
+    </div>
+    
+
+    <div class="dropdown">
+        <p>
+        <h2 class="h2">
+        
+          <select class="body" >
+            <option> English-E </option>
+            <option>Portugues(p.t)</option>
+            <option>Vietnam</option>
+            <option>Telugu-T</option>
+            <option>Hindi-H</option>
+            <option>Urdu-U</option>
+          </select>
+
+          
+        <select class="body" >
+            <option> INDIA </option>
+            <option>USA</option>
+            <option>England</option>
+            <option>Australia</option>
+            <option>kathar</option>
+            <option> pakidthsn </option><br>
+            <option>Uk</option>
+            <option>Portugies</option>
+            <option>New York</option>
+            <option>Canada</option>
+            <option> Tornato</option>
+            <option>Afgan</option>
+            <option>England</option>
+            <option>Australia</option>
+            <option>kathar</option>
+          </select>
+        </h2>
+    </p>
+    </div> 
+
+
+    <div class="page">
+            <button class="page-button"><a href="./index.html" class="page-ancer">1</a></button>
+            <button class="page-button"><a href="./orders.html" class="page-ancer">2</a></button>
+            <button class="page-button"><a href="./offers.html" class="page-ancer">3</a></button>
+            <button class="page-button"><a href="./delivery.html" class="page-ancer">4</a></button>
+        </div>
+
+
+    <div class="maindiv">
+       <div class="subdiv1">
+          <nav>ABOUT foodie</nav>
+          
+          <ul >
+            <li class="li"><a href="#" class="href"> Who we arae you</a></li><br>
+            <li class="li"><a href="#" class="href"> Blog</a></li><br>
+            <li class="li"><a href="#" class="href"> Work With  US</a></li><br>
+            <li class="li"><a href="#" class="href"> investor Relations</a></li><br>
+            <li class="li"><a href="#" class="href"> Report Fraud</a></li><br>
+        </ul>
+
+       </div>
+       <div class="subdiv2">
+        <nav>ZOMAVERSE</nav><br>
+        
+        <ul >
+          <li class="li"><a href="#" class="href"> foodie</a></li><br>
+          <li class="li"><a href="#" class="href"> Feeding india</a></li><br>
+          <li class="li"><a href="#" class="href"> Hyper pure</a></li><br>
+          <li class="li"><a href="#" class="href"> Zomaland</a></li><br>
+      </ul>
+    </div>
+       <div class="subdiv3">
+        <nav>For Restaurants</nav>
+        
+        <ul >
+          <li class="li"><a href="#" class="href"> Partner with us</a></li><br>
+          <li class="li"><a href="#" class="href"> Apps For U</a></li><br>
+          <nav> Enterprises</nav><br>
+          <li class="li"><a href="#" class="href"> foodie For Work</a></li><br>
+      </ul>
+       </div>
+       <div class="subdiv4">
+        <nav>Learn More</nav>
+        
+        <ul >
+          <li class="li"><a href="#" class="href"> Privacy</a></li><br>
+          <li class="li"><a href="#" class="href"> Security</a></li><br>
+          <li class="li"><a href="#" class="href"> Terms</a></li><br>
+          <li class="li"><a href="#" class="href"> sideMap</a></li><br>
+      </ul></div>
+    </div>
+     </div>
+    </body>
+</html>

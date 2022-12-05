@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+}
+header{
+    width: 95%;
+    height: 75px;
+    margin: 0px auto;
+}
+.header-ul{
+    padding: 0px;
+}
+.header-li{
+    float: left;
+    background-color: tomato;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+}
+.header-a{
+    color: white;
+    text-decoration: none;
+}
+.header-li:hover{
+    background-color: #26de26;
+    opacity: 0.9;
+}
+form{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 15px;
+}
+p{
+    font-size: 17px;
+    font-weight: bolder;
+}
+.header-input{
+    width: 350px;
+    height: 20px;
+}
+select{
+    width: 300px;
+    height: 20px;
+}
+#select{
+    width: 150px;
+    height: 22px;
+}
+footer{
+    padding: 15px;
+}
+.button{
+    background-color: rgb(243, 185, 78);
+    color: black;
+    height: 36px;
+    width: 200px;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: #ff7a00;
+    color: white;
+    border-radius: 6px;
+}
+.p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.page1{
+    border-bottom: 1px solid rgb(81, 77, 77);
+    box-shadow: 10px;
+    text-align: center;
+}
+.page1-button{
+    font-size: 25px;
+}
+.page1-ancer{
+    text-decoration: none;
+    color: black;
+}

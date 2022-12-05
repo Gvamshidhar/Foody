@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        .header{
+            border: 1px solid black;
+            height: 750px;
+            display: flex;
+        }
+        section{
+            display: flex;
+            flex-grow: 1;
+            background-image: url("./photos/swiggy1.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img{
+            border-radius: 100%;
+        }
+        .abc{
+            padding: 10px;
+        }
+        section h1{
+            padding: 0px;
+            margin: 0px;
+            color:rgb(59, 57, 57);
+            font-weight: 500;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav{
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            background-color: rgb(244, 241, 241);
+        }
+        form{
+            border: 1px solid transparent;
+            width:90%;
+            /* height: 70%; */
+            text-align: center;
+        }
+        form h1{
+            font-size: 43px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+        input{
+            width: 28%;
+            height: 35px;
+            border: 2px solid black;
+            border-radius: 25px;
+            background-color: #ff7a00;
+            opacity: 0.8; 
+        }
+        input:hover{
+            width: 30%;
+            height: 35px;
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: teal;
+            box-shadow: 9px 9px teal;
+        }
+        ::placeholder {
+            color: white;
+        }
+        .input{
+            width: 50%;
+            height: 35px;
+            border: 2px solid black;
+            border-radius: 25px;
+            background-color: #ff7a00;
+            opacity: 0.8; 
+        }
+        .input:hover{
+            width: 55%;
+            height: 35px;
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: teal;
+            box-shadow: 9px 9px teal;
+        }
+        span{
+            border: 1px solid black;
+            border-radius: 50%;
+            font-size: 20px;
+            padding: 10px;
+            font-weight: 800;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: blue;
+        }
+        .g{
+            background-color: red;
+            margin: 15px;
+        }
+        button{
+            width: 35%;
+            height: 39px;
+            background-color: #ff7a00;
+            opacity: 0.8; 
+            border-radius: 15px;
+        }
+        button:hover{
+            width: 35%;
+            height: 39px;
+            background-color: teal;
+            border-radius: 20px;
+            box-shadow: 9px 9px teal;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .ab{
+            color: #ff7a00;
+        }
+        .ab:hover{
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <section>
+            <a href="./Home.html" class="abc"><img src="./photos/download (1).jfif" class="img" height="70px" width="70px"></a>
+        </section>
+        <nav>
+            <form action="">
+                <h1>Create Your Account</h1>
+                <input type="text" placeholder="Enter name">
+                <input type="text" placeholder="Last name" ><br><br>
+                <input type="text" placeholder="Enter Userid" class="input"><br><br>
+                <input type="email" placeholder="Enter Email" class="input"><br><br>
+                <input type="password" placeholder="Enter Password" class="input"><br><br>
+                <input type="password" placeholder="Reenter Password" class="input"><br><br>
+                <button><a href="">SUBMIT</a></button>
+                <p>(OR)</p>
+                <h4>Login using social media</h4>
+                <span><a href="">f</a></span><span class="g"><a href="">G</a></span><br>
+                <h3>Already Have an Account | <a href="./signin.html" class="ab">Login</a></h3>
+            </form>
+        </nav>
+    </div>
+</body>
+</html>
